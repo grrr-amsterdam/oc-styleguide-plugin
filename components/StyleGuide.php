@@ -8,8 +8,8 @@ class StyleGuide extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'StyleGuide Component',
-            'description' => 'Renders a style guide!'
+            'name' => 'StyleGuide Component',
+            'description' => 'Renders a style guide.'
         ];
     }
 
@@ -19,13 +19,13 @@ class StyleGuide extends ComponentBase
             'path' => [
                 'title' => 'path',
                 'type' => 'string',
-                'description' => 'Relative to the theme\'s partials directory'
+                'description' => 'Relative to the theme\'s partials directory.'
             ],
             'extension' => [
                 'title' => 'extension',
                 'type' => 'string',
-                'description' => 'File extension to filter on',
-                'default' => 'twig'
+                'description' => 'File extension to filter on.',
+                'default' => 'htm'
             ]
         ];
     }

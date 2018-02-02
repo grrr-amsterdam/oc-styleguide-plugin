@@ -19,28 +19,8 @@ class Plugin extends PluginBase
             'name'        => 'StyleGuide',
             'description' => 'Provides a component to render a style guide.',
             'author'      => 'Grrr',
-            'icon'        => 'icon-leaf'
+            'icon'        => 'icon-paint-brush',
         ];
-    }
-
-    /**
-     * Register method, called when the plugin is first registered.
-     *
-     * @return void
-     */
-    public function register()
-    {
-
-    }
-
-    /**
-     * Boot method, called right before the request route.
-     *
-     * @return array
-     */
-    public function boot()
-    {
-
     }
 
     /**
@@ -55,40 +35,4 @@ class Plugin extends PluginBase
         ];
     }
 
-    /**
-     * Registers any back-end permissions used by this plugin.
-     *
-     * @return array
-     */
-    public function registerPermissions()
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'grrr.styleguide.some_permission' => [
-                'tab' => 'StyleGuide',
-                'label' => 'Some permission'
-            ],
-        ];
-    }
-
-    /**
-     * Registers back-end navigation items for this plugin.
-     *
-     * @return array
-     */
-    public function registerNavigation()
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'styleguide' => [
-                'label'       => 'StyleGuide',
-                'url'         => Backend::url('grrr/styleguide/mycontroller'),
-                'icon'        => 'icon-leaf',
-                'permissions' => ['grrr.styleguide.*'],
-                'order'       => 500,
-            ],
-        ];
-    }
 }

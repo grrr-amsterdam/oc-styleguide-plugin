@@ -3,7 +3,7 @@
     <header class="styleguide__header grid grid--no-vpadding">
         <h2 class="grid__item--12">
             {{ partial.description }}
-            <span class='styleguide__label'>Styleguide element</span>
+            <span class='styleguide__label'>{{ 'grrr.styleguide::lang.view.element.header' | trans }}</span>
         </h2>
     </header>
 
@@ -13,11 +13,11 @@
 
     <div class="grid">
         <div class="grid__item--12">
-            <label class="styleguide__nerds-toggle-label" for="nerds-toggle-{{index}}">Details voor nerds</label>
+            <label class="styleguide__nerds-toggle-label" for="nerds-toggle-{{index}}">{{ 'grrr.styleguide::lang.view.details.label' | trans }}</label>
             <input type="checkbox" id="nerds-toggle-{{index}}" class="styleguide__nerds-toggle">
 
             <div class="styleguide__details-for-nerds">
-                <h3>Parameters:</h3>
+                <h3>{{ 'grrr.styleguide::lang.view.details.parameters' | trans }}</h3>
                 <table class="styleguide__params">
                 {% for name, param in partial.params %}
                     <tr>
@@ -28,7 +28,7 @@
                 {% endfor %}
                 </table>
 
-                <h3>Bron:</h3>
+                <h3>{{ 'grrr.styleguide::lang.view.details.source' | trans }}</h3>
                 <pre class="styleguide__source">{{ partial.contents }}</pre>
             </div>
         </div>
