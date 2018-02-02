@@ -1,0 +1,37 @@
+{% for index, partial in partials %}
+<article>
+    <header class="styleguide__header grid grid--no-vpadding">
+        <h2 class="grid__item--12">
+            {{ partial.description }}
+            <span class='styleguide__label'>Styleguide element</span>
+        </h2>
+    </header>
+
+    {% for example in partial.examples %}
+        {{ example|raw }}
+    {% endfor %}
+
+    <div class="grid">
+        <div class="grid__item--12">
+            <label class="styleguide__nerds-toggle-label" for="nerds-toggle-{{index}}">Details voor nerds</label>
+            <input type="checkbox" id="nerds-toggle-{{index}}" class="styleguide__nerds-toggle">
+
+            <div class="styleguide__details-for-nerds">
+                <h3>Parameters:</h3>
+                <table class="styleguide__params">
+                {% for name, param in partial.params %}
+                    <tr>
+                        <td><code>{{ param.type }}</code></td>
+                        <td>{{ name }}</td>
+                        <td>{{ param.description }}</td>
+                    </tr>
+                {% endfor %}
+                </table>
+
+                <h3>Bron:</h3>
+                <pre class="styleguide__source">{{ partial.contents }}</pre>
+            </div>
+        </div>
+    </div>
+</article>
+{% endfor %}

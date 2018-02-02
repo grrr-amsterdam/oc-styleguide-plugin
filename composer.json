@@ -1,0 +1,17 @@
+{
+    "name": "grrr-amsterdam/oc-styleguide-plugin",
+    "type": "october-plugin",
+    "description": "OctoberCMS plugin for generating a style guide from your partials.",
+    "homepage": "https://github.com/grrr-amsterdam/oc-styleguide-plugin",
+    "keywords": ["october", "octobercms", "translate"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Harmen Janssen",
+            "email": "harmen@grrr.nl"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    }
+}
