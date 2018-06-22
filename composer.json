@@ -1,9 +1,9 @@
 {
     "name": "grrr-amsterdam/oc-styleguide-plugin",
     "type": "october-plugin",
-    "description": "OctoberCMS plugin for generating a style guide from your partials.",
+    "description": "OctoberCMS plugin for generating a styleguide from your partials.",
     "homepage": "https://github.com/grrr-amsterdam/oc-styleguide-plugin",
-    "keywords": ["october", "octobercms", "translate"],
+    "keywords": ["october", "octobercms"],
     "license": "BSD-3-Clause",
     "authors": [
         {
