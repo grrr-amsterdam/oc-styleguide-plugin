@@ -1,6 +1,5 @@
 <?php namespace Grrr\StyleGuide;
 
-use Backend;
 use System\Classes\PluginBase;
 
 /**
