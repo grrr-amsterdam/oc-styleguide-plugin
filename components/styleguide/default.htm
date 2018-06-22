@@ -1,36 +1,36 @@
 {% for index, partial in partials %}
-<article>
-    <header class="styleguide__header grid grid--no-vpadding">
-        <h2 class="grid__item--12">
+<article class="styleguide">
+    <header class="styleguide__header">
+        <h2>
             {{ partial.description }}
             <span class='styleguide__label'>{{ 'grrr.styleguide::lang.view.element.header' | trans }}</span>
         </h2>
     </header>
 
     {% for example in partial.examples %}
-        {{ example|raw }}
+        <div class="styleguide__example">
+            {{ example|raw }}
+        </div>
     {% endfor %}
 
-    <div class="grid">
-        <div class="grid__item--12">
-            <label class="styleguide__nerds-toggle-label" for="nerds-toggle-{{index}}">{{ 'grrr.styleguide::lang.view.details.label' | trans }}</label>
-            <input type="checkbox" id="nerds-toggle-{{index}}" class="styleguide__nerds-toggle">
+    <div class="styleguide__details-container">
+        <label class="styleguide__details-toggle-label" for="details-toggle-{{index}}">{{ 'grrr.styleguide::lang.view.details.label' | trans }}</label>
+        <input type="checkbox" id="details-toggle-{{index}}" class="styleguide__details-toggle">
 
-            <div class="styleguide__details-for-nerds">
-                <h3>{{ 'grrr.styleguide::lang.view.details.parameters' | trans }}</h3>
-                <table class="styleguide__params">
-                {% for name, param in partial.params %}
-                    <tr>
-                        <td><code>{{ param.type }}</code></td>
-                        <td>{{ name }}</td>
-                        <td>{{ param.description }}</td>
-                    </tr>
-                {% endfor %}
-                </table>
+        <div class="styleguide__details">
+            <h3>{{ 'grrr.styleguide::lang.view.details.parameters' | trans }}</h3>
+            <table class="styleguide__params">
+            {% for name, param in partial.params %}
+                <tr>
+                    <td><code>{{ param.type }}</code></td>
+                    <td>{{ name }}</td>
+                    <td>{{ param.description }}</td>
+                </tr>
+            {% endfor %}
+            </table>
 
-                <h3>{{ 'grrr.styleguide::lang.view.details.source' | trans }}</h3>
-                <pre class="styleguide__source">{{ partial.contents }}</pre>
-            </div>
+            <h3>{{ 'grrr.styleguide::lang.view.details.source' | trans }}</h3>
+            <pre class="styleguide__source">{{ partial.contents }}</pre>
         </div>
     </div>
 </article>

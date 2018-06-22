@@ -5,7 +5,7 @@ return [
             'header' => 'Styleguide element',
         ],
         'details' => [
-            'label' => 'Details voor nerds',
+            'label' => 'Technische specificaties',
             'parameters' => 'Parameters',
             'source' => 'Bron:'
         ]
