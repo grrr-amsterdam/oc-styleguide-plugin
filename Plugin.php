@@ -1,4 +1,4 @@
-<?php namespace Grrr\StyleGuide;
+<?php namespace Grrramsterdam\StyleGuide;
 
 use System\Classes\PluginBase;
 
@@ -30,7 +30,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Grrr\StyleGuide\Components\StyleGuide' => 'styleGuide',
+            'Grrramsterdam\StyleGuide\Components\StyleGuide' => 'styleGuide',
         ];
     }
 

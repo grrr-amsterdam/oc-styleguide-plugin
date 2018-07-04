@@ -1,7 +1,7 @@
-<?php namespace Grrr\StyleGuide\Components;
+<?php namespace Grrramsterdam\StyleGuide\Components;
 
 use Cms\Classes\ComponentBase;
-use Grrr\StyleGuide\Classes\StyleGuide as StyleGuideFormatter;
+use Grrramsterdam\StyleGuide\Classes\StyleGuide as StyleGuideFormatter;
 
 class StyleGuide extends ComponentBase
 {

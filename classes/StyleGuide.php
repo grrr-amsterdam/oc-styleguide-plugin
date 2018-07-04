@@ -1,12 +1,12 @@
 <?php
-namespace Grrr\StyleGuide\Classes;
+namespace Grrramsterdam\StyleGuide\Classes;
 use Garp\Functional as f;
 use October\Rain\Halcyon\Processors\SectionParser;
 use October\Rain\Parse\Twig as TwigParser;
 use Cms\Classes\Theme;
 
 /**
- * @package Grrr\StyleGuide\Classes
+ * @package Grrramsterdam\StyleGuide\Classes
  * @author  Harmen Janssen <harmen@grrr.nl>
  */
 class Styleguide
